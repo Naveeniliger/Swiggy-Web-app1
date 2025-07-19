@@ -1,0 +1,493 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: poppins, sans-serif;
+ }
+
+ .Swiggy-header {
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 4em;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: white;
+ }
+
+ .Swiggy-header p {
+   font-weight: 360;
+   font-size: 1.6rem;
+   /* border-left: 1.5rem; */
+   /* border-left: 5px; */
+ }
+
+ .Swiggy-logo img {
+   max-width: 12em;
+   margin-left: 2em;
+
+ }
+
+ .Swiggy-logo {
+   display: flex;
+   align-items: center;
+ }
+
+ .Location-logo {
+   width: 15px;
+   margin-right: 8px;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ .Location-img-logo {
+   display: flex;
+ }
+
+ .Nav-bar ul {
+   display: flex;
+   list-style-type: none;
+   transition: ease-in-out;
+   /* margin-right: 2em; */
+   align-items: center;
+ }
+
+ .Login {
+   border: 2px solid black;
+   padding: 3px;
+   width: 4.5em;
+   color: white;
+   background-color: black;
+   border-radius: 15px;
+ }
+
+ .Nav-bar ul li {
+   margin-inline: 2rem;
+   font-weight: 300;
+   font-size: 1.3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ .Links {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: inherit;
+
+ }
+
+ .Nav-bar ul li img {
+   display: flex;
+   max-width: 20px;
+   margin-right: 8px;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .Nav-bar ul :hover {
+   color: #fe5000;
+   cursor: pointer;
+   transform: scale(1.08);
+ }
+
+ .Swiggy-header p :hover {
+   color: #fe5000;
+   cursor: pointer;
+ }
+
+ @media (max-width : 700px) {
+   .Nav-bar ul {
+     /* display: none; */
+     margin-left: -150px;
+     display: flex;
+     flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .Swiggy-header {
+     height: 8em;
+   }
+
+   .Swiggy-logo {
+     min-width: 100px;
+   }
+
+   .Swiggy-logo img {
+     margin-left: 6px;
+     width: 8em;
+     margin-top: -80px;
+   }
+
+   .Location-img-logo {
+     display: none;
+   }
+
+   .Nav-bar ul li {
+     margin-inline: 1em;
+     margin-block: 0.5em;
+     /* width: 1px; */
+     font-size: 18px;
+
+   }
+
+   .Nav-bar ul li img {
+     width: 18px;
+   }
+
+ }
+
+
+ /* SwiggyBody  */
+ /* SwiggyBody  */
+ /* SwiggyBody  */
+ /* SwiggyBody  */
+
+ .Swiggy-card {
+   width: 250px;
+   margin-top: 1em;
+   margin-inline: auto;
+   border-radius: 15px;
+   overflow: hidden;
+   transition: ease-in-out 0.2s;
+ }
+
+ .a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .Swiggy-card {
+   text-decoration: none;
+   color: inherit;
+
+ }
+
+ .Card-img img {
+   width: 100%;
+   height: 25vh;
+   object-fit: cover;
+   border-radius: 15px;
+ }
+
+ .Card-info {
+   margin-left: 12px;
+   text-decoration: none;
+ }
+
+ .Swiggy-card:hover {
+   transform: scale(0.95);
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ }
+
+ .Swiggy-main button {
+   margin: 10px;
+   background-color: black;
+   border: 0;
+   padding: 15px;
+   color: white ;
+   cursor: pointer;
+ }
+ .Searchbar{
+  padding: 1em  8em;
+ }
+
+ .Swiggy-cardContainer {
+   display: flex;
+   flex-wrap: wrap;
+   /* gap: 60px; */
+   margin-inline: auto;
+   justify-content: space-between;
+
+ }
+
+ .Swiggy-cardContainer a {
+   text-decoration: none;
+   color: inherit;
+
+ }
+
+
+ .Swiggy-main {
+   margin-inline: 10em;
+ }
+
+ @media (max-width : 700px) {
+   .Swiggy-main {
+     margin-inline: 1em;
+   }
+
+   .Swiggy-cardContainer {
+     margin-inline: 20px;
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     justify-content: center;
+   }
+   .Searchbar{
+    padding: 6px;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    margin-left: 50px;
+    width: 15em;
+   }
+   .btn{
+    /* margin-inline: auto; */
+    border-radius: 10px;
+    margin-left: 3em;
+   }
+   .search{
+    background-color: #fe5000;
+    margin-top: 5px;
+   }
+   .Search-btn{
+    border-radius: 10px;
+   }
+ }
+
+ @media (max-width : 600px) {
+   .Swiggy-main {
+     margin-inline: 1em;
+   }
+
+   .Swiggy-cardContainer {
+     margin-inline: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     justify-items: center;
+   }
+    .Swiggy-main button{
+      padding: 10px;
+    }
+ }
+
+
+
+ /* Cards Shimmer-Body */
+
+ .shimmer-container.shimmer-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5em;
+   align-items: center;
+   justify-content: center;
+   margin-block: 4em;
+
+ }
+
+ .shimmer-image {
+   background-color: #DCDCDC;
+   width: 250px;
+   height: 200px;
+   border-radius: 35px;
+
+ }
+
+ .shimmer-line {
+   background-color: #DCDCDC;
+   width: 170px;
+   height: 20px;
+   margin-top: 0.5em;
+   margin-left: 1em;
+   border-radius: 10px;
+ }
+
+ .shimmer-line2 {
+   background-color: #DCDCDC;
+   width: 170px;
+   height: 20px;
+   margin-top: 1em;
+   margin-left: 1em;
+   border-radius: 10px;
+ }
+
+
+
+ /* Menu Styling*/
+
+
+ .RestMenu {
+   max-width: 700px;
+   margin-inline: auto;
+   font-family: inherit;
+ }
+
+ /* .RestCard{
+  cursor: pointer;
+} */
+ .text {
+   margin: 20px 12px;
+ }
+
+ .box {
+   border: 1px solid #F0F8FF;
+   border-radius: 15px;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+   margin-inline: 15px;
+   padding: 20px;
+ }
+
+ .box-text {
+   margin-inline: 10px;
+ }
+
+ .colortext {
+   color: #fe5000;
+ }
+
+ .Recomend {
+   /* margin-left: 12px; */
+   border: 1px solid #DCDCDC;
+   margin-block: 2rem;
+   padding: 0.5em;
+   display: flex;
+   justify-content: space-between;
+   padding-right: 2rem;
+   cursor: pointer;
+ }
+
+ .Recomendtext {
+   margin-left: 12px;
+   /* display: flex ; */
+ }
+
+ .text-img {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 30px;
+   padding-bottom: 40px;
+   border-bottom: 1px solid gray;
+
+ }
+
+ .Recomendimg img {
+   max-width: 150px;
+   margin-right: 12px;
+   border-radius: 35px;
+
+ }
+
+ .Addbox {
+   position: absolute;
+   bottom: -15px;
+   right: 38px;
+   background-color: white;
+   padding: 5px 30px;
+   border-radius: 8px;
+   color: black;
+   font-weight: bold;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+ }
+
+ .Addbox :hover {
+   /* background-color: #DCDCDC; */
+   cursor: pointer;
+   transform: scale(1.4);
+
+ }
+
+ .Add :hover {
+   background-color: #DCDCDC;
+   cursor: pointer;
+   transform: scale(1.4);
+ }
+
+ .Recomendimg {
+   position: relative;
+ }
+
+ .item-card {
+   display: flex;
+ }
+
+ /* Shimmer 2 Styiling */
+
+ .Shimmer2 {
+   width: 600px;
+   height: 200px;
+   background-color: #DCDCDC;
+   margin-inline: auto;
+   margin-top: 80px;
+   border-radius: 50px;
+ }
+ @media (max-width : 700px){
+  .Shimmer2{
+    width: 400px;
+  }
+ }
+
+
+
+
+ /* Cart Model */
+
+ .cartShow {
+   width: 20px;
+   height: 20px;
+   background-color: black;
+   position: absolute;
+   margin-bottom: 20px;
+   margin-right: 40px;
+   border-radius: 50%;
+   color: white;
+   font-size: 15px;
+ }
+
+
+ /* inside Cart */
+
+ .CartMain {
+   text-align: center;
+   margin-top: 10px;
+ }
+
+ .ClearCart {
+   background-color: white;
+   padding: 5px 30px;
+   border-radius: 8px;
+   color: black;
+   font-weight: bold;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   margin-top: 6px;
+ }
+
+ .CartItems {
+   margin-top: 50px;
+   width: 50%;
+   margin-inline: auto;
+
+   /* margin: 2rem; */
+ }
+
+ .ClearCar :hover {
+
+   background-color: #DCDCDC;
+   cursor: pointer;
+
+ }
+
+ .ClearCart2 :hover {
+   background-color: #DCDCDC;
+   transform: scale(1.1);
+ }
+
+ .Mycart {
+   color: #fe5000;
+ }
