@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addItem } from "../../../Utilities/CartSlice";
+import { addItem } from "../Utilities/CartSlice";
 
 const ItemCards = ({ items }) => {
     // console.log(items)

@@ -8,7 +8,7 @@ import Cart from './Components/Cart'
 import Error from './Components/Error'
 import RestMenu from './Components/RestMenu'
 import { Provider } from 'react-redux'
-import AppStore from '../../Utilities/AppStore'
+import AppStore from './Utilities/AppStore'
 
 
 
